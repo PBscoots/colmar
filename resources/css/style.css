@@ -1,0 +1,204 @@
+/*Main css page for the colmar final project
+Dev: Andrew Vanderpool
+
+other style sheets:
+reset sheet is used
+font awesome
+google fonts
+*/
+/*Set projct font size*/
+html {
+  font-size: 8px;
+  font-family: 'Lato', sans-serif;
+  color: #4a4a4a;
+  background-color: #f3f5f5
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+/*handles the image and video sizing*/
+img, video {
+  height: auto;
+  width: 100%;
+}
+/*Make the header split into two parts and set the height and width*/
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 8rem;
+    width: 100%;
+    background-color: white;
+}
+/*Sets the left side stuff and the font for the logo*/
+.left {
+  display: flex;
+  margin-left: 3rem;
+  font-size: 3rem;
+}
+
+.left a {
+  display: flex;
+  align-items: center;
+  text-decoration:none;
+  color: #4a4a4a;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#logo-img {
+  width:5rem;
+}
+/*sets the right side as flex to get stuff centered*/
+.right {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+}
+/*sets to flex to get things to be next to each other*/
+.right nav ul {
+  display: flex;
+}
+/*sets the links to stle them up*/
+.right nav > ul > li > a {
+  text-decoration: none;
+  color: black;
+  font-size: 2.5rem;
+  padding: 2rem 1rem;
+}
+/*colors on hover*/
+.right nav > ul > li:hover a {
+  background-color: gray;
+  color: white;
+}
+
+/*******Main content for page styling********/
+/*this gets used mulitple times for several sections. I thought about making a flex class but decided against it. Let me know if thats how I should have done it*/
+.content-container {
+  display: flex;
+  width: 100%;
+}
+/*Is used for every content-container as they all are set up pretty much the same way*/
+.left-content {
+  width: 60%;
+  padding: 4rem 2rem 3rem 3rem;
+}
+
+
+/*sets up the fright content side of the content-container*/
+.right-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 2rem;
+}
+/*everything having to do with the banner section*/
+#banner {
+  background-color: #d8d8d8;
+}
+/*sets the right content for the banner*/
+#banner .right-content {
+  justify-content: center;
+  width: 30%;
+  margin: 3rem 0rem 3rem 5rem;
+}
+/*Made the font as heavy as I could to get it close to the redline. I think it has to do with the font I picked*/
+#banner .right-content h1, #banner .right-content h3 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 2rem 0rem;
+}
+/*styles the start here button*/
+#btn-starthere {
+  margin: 2rem 0rem;
+  width: 100%;
+  padding: 1rem 0rem;
+  background-color: #4a4a4a;
+  text-align: center;
+  font-size: 3rem;
+  text-decoration: none;
+  color: white;
+}
+
+#btn-starthere:hover {
+  text-decoration: underline;
+  color: #cecece;
+  background-color: #656565
+}
+
+.information {
+  display: flex;
+  width: 52.875rem;
+  height: 21rem;
+
+}
+
+.divider {
+  border-left: 1px solid gray;
+  margin-left: 1rem;
+  padding-top: 2rem;
+}
+
+.left-content h2 {
+  margin: 4rem 0rem 3rem 0rem;
+}
+
+.info-img {
+  width: 35%;
+  margin: 2rem;
+}
+
+.info {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0rem 0rem 0rem 2rem;
+}
+
+.info h3 {
+  margin: 1rem 0rem;
+}
+
+.info p {
+  font-size: 2rem;
+  white-space: normal;
+}
+
+.info a {
+  margin: 3rem 0rem;
+  text-decoration: none;
+  color: Blue;
+  font-size: 2rem;
+}
+
+.info a:hover {
+  text-decoration: underline;
+  color: lightblue;
+}
+
+
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.course-item {
+  height: 33.5rem;
+  width: 35rem
+}
+
+
+.thesis {
+  margin-left: 1
+}

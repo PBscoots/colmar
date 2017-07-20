@@ -4,14 +4,17 @@
     <meta charset="utf-8">
     <title>Colmar</title>
     <link rel="stylesheet" href="resources/css/reset.css">
-    <link rel="stylesheet" href="resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:300,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="resources/css/style.css">
   </head>
   <body>
     <header><!--I am choosing not to make this header sticky because in this case, I feel its not necessary to have the nav follow as you scroll-->
       <div class="left">
-        <img src="resources/images/ic-logo.svg" alt="Unavailable">
-        <span class="logo"><span stlye="font-weight:bold;">Colmar</span>Academy</span>
+        <a href="#" title="Home">
+          <img id="logo-img" src="resources/images/ic-logo.svg" alt="Unavailable">
+          <span class="logo"><strong style="font-weight:bold;">COLMAR</strong>ACADEMY</span>
+        </a>
       </div>
       <div class="right">
         <nav>
@@ -24,51 +27,51 @@
         </nav>
       </div>
     </header>
-    <div class="banner content-container">
-      <div class="image">
+    <div id="banner" class="content-container">
+      <div class="left-content"><!--Div for the item on the left-->
         <img src="resources/images/banner.jpg" alt="Image Unavailable">
       </div>
-      <div>
-        <h1>Learn Something New Every Day</h1>
+      <div class="right-content"><!--Div for the item on the right-->
+        <h1>Learn something new every day</h1>
         <h3>Lorem ipsum dolor sit amet, consectetur adipicising eli.</h3>
-        <span><a href="#">Start here</a></span>
+        <a href="#" title="Click Here to begin your adventure!"  id="btn-starthere">Start here</a>
       </div>
 
     </div>
     <div class="content-container">
-      <div><!--Div for the item on the left-->
+      <div class="left-content"><!--Div for the item on the left-->
         <img src="resources/images/information-main.jpg" alt="Image Unavailable">
         <h2>It doesn't hurt to keep practicing</h2>
         <p>"Quisque vel lacus tortor. Pellentesque vel nunc lorem. Ut semper pharetra egestas. Etiam diam justo, tempor non nulla et, accumsan facilisis magna. Sed velit sapien, dictum nec auctor eu, bibendum et ex."</p><!--didn't feel like rewriting from the wireframe so I just used a lorem ipsum generator-->
         <span>Emanual, Sr Strategist at Hiring.com</span>
       </div>
-      <div><!--Div for the item on the right-->
+      <div class="right-content divider"><!--Div for the item on the right-->
         <div class="information">
-          <div class="img">
+          <div class="info-img">
             <img src="resources/images/information-orientation.jpg" alt="Image Unavailable">
           </div>
           <div class="info">
-            <h5>Orientation Date</h5>
+            <h3>Orientation Date</h3>
             <p>Tues 10/11 & Wed 10/12: 8am-3pm</p>
             <a href="#">Read more</a>
           </div>
         </div>
         <div class="information">
-          <div class="img">
+          <div class="info-img">
             <img src="resources/images/information-campus.jpg" alt="Image Unavailable">
           </div>
           <div class="info">
-            <h5>Our Campus</h5>
+            <h3>Our Campus</h3>
             <p>Find which campus is close by you</p>
             <a href="#">Read more</a>
           </div>
         </div>
         <div class="information">
-          <div class="img">
+          <div class="info-img">
             <img src="resources/images/information-guest-lecture.jpg" alt="Image Unavailable">
           </div>
           <div class="info">
-            <h5>Our Guest Lecture</h5>
+            <h3>Our Guest Lecture</h3>
             <p>Join a keynote with Oliver Sack about music in medical treatment</p>
             <a href="#">Read more</a>
           </div>
@@ -118,15 +121,15 @@
     </div>
     <h2 class="thesis">Thesis Exhibit</h2>
     <div class="content-container">
-      <div><!--Div for the item on the left-->
+      <div class="left-content"><!--Div for the item on the left-->
         <video src="resources/videos/thesis.mp4" controls>
           Your browser does not support video, or video not found
         </video>
         <h5>Reimagine Urban</h5>
         <p>"Sed ultrices felis tortor, eget consequat eros tempus a. Ut at leo euismod, lobortis mauris quis, aliquam ipsum. Integer eu mauris nec quam mollis tincidunt. Praesent iaculis sollicitudin augue sit amet auctor. Duis sed auctor lacus."</p><!--didn't feel like rewriting from the wireframe so I just used a lorem ipsum generator-->
       </div>
-      <div><!--Div for the item on the right-->
-        <div class="information">
+      <div class="right-content"><!--Div for the item on the right-->
+        <div class="information thesis">
           <div class="img">
             <img src="resources/images/thesis-fisma.jpg" alt="Image Unavailable">
           </div>
@@ -135,7 +138,7 @@
             <p>Designer Showcase of new prototype product</p>
           </div>
         </div>
-        <div class="information">
+        <div class="information thesis">
           <div class="img">
             <img src="resources/images/thesis-now-and-then.jpg" alt="Image Unavailable">
           </div>
