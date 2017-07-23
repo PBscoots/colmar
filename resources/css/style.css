@@ -6,6 +6,7 @@ NOTES:
 -Many sizes of things in the redline were not specified so I had to assume a lot.
 -Due to this many things to not look exactly the same but close enough for government work.
 -I did not program mobile first
+-In the end I gave up on the images in the highlights section in the mobile mode. I could not get them to scale the way I wanted
 
 other style sheets referenced:
 reset sheet is used
@@ -314,7 +315,7 @@ footer .right nav >ul >li:hover >a {
   color: #cecece;
 }
 
-
+/*I set my media query to be at a natural breaking point where the top nav go cramped*/
 @media screen and (max-width:750px) {
   .desktop {
     display: none;
@@ -322,6 +323,16 @@ footer .right nav >ul >li:hover >a {
 
   .mobile {
     display: block;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  .divider {
+    border: none;
+    margin: 0rem;
+    padding: 0rem;
   }
 /*I would probably make this into an accordian with bootstrap or something if I was making this a real website*/
   .course-item img {
@@ -337,25 +348,93 @@ footer .right nav >ul >li:hover >a {
     align-items: center;
   }
 
+  .left-content {
+    width: initial;
+  }
+
+  .right-content {
+    width: initial;
+    margin: 2rem;
+  }
+
   #banner .right-content {
-    width: 100%;
+    width: initial;
+    margin: 4rem 2rem;
+  }
+
+  #banner .right-content h1 {
+    margin:0rem 0rem 4rem 0rem;
+  }
+
+  #banner .right-content h4 {
+    margin:0rem 0rem 3rem 0rem;
   }
 
   #banner .left-content {
     height: 22.5rem;
     background-color: darkgray;
+    margin: 0rem;
+    width: 100%;
+  }
+
+  #btn-starthere {
+    margin: 0rem;
   }
 
   .information {
     flex-direction: column;
+    width: 100%;
+    height: initial;
   }
 
-  .left-content {
+  #highlights .right-content .information {
+  border: none;
+  }
+/*sets the background back to the whiteish color*/
+  #highlights .gray-back {
+    background-color: #f3f5f5;
+  }
+
+  .info-img {
     width: 100%;
+    margin: 0;
+  }
+
+  .info {
+    width: initial;
+    margin: 2rem 2rem;
+  }
+  /*sets the background back to the whiteish color*/
+  #learning {
+    background-color: #f3f5f5;
+    border: 1px solid #d8d8d8;
+  }
+
+  #learning h2 {
+    margin: 0rem 0rem 2rem 0rem;
+  }
+
+  #thesis {
+    margin: 4rem 0rem 3rem 0rem;
+  }
+
+  #thesis h2 {
+    margin: 0rem 0rem 4rem 0rem;
   }
 
   header .right nav > ul > li > a {
     padding: 2rem 3rem;
+  }
+
+  footer {
+    height: initial;
+  }
+  footer .left span {
+    padding: 2rem 0rem;
+  }
+  .course-item {
+    background-color: #d8d8d8;
+    margin: 0rem 2rem 1rem 2rem;
   }
 
 }
