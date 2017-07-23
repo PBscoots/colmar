@@ -2,9 +2,10 @@
 Dev: Andrew Vanderpool
 
 NOTES:
-I like to write most of my margins and paddings explicitly instead of top, right ...
-Many sizes of things in the redline were not specified so I had to assume a lot.
-Due to this many things to not look exactly the same but close enough for government work.
+-I like to write most of my margins and paddings explicitly instead of top, right ...
+-Many sizes of things in the redline were not specified so I had to assume a lot.
+-Due to this many things to not look exactly the same but close enough for government work.
+-I did not program mobile first
 
 other style sheets referenced:
 reset sheet is used
@@ -20,7 +21,8 @@ html {
 }
 /*set basic attributes of headings and other elements that reset got rid of*/
 h1 {
-  font-size: 6rem;
+  font-size: 5.5rem;
+  font-weight: bold;
 }
 
 h2 {
@@ -50,6 +52,10 @@ p {
 img, video {
   height: auto;
   width: 100%;
+}
+/*to hide the font awesome icons in desktop mode*/
+.mobile {
+  display: none;
 }
 /*Make the header split into two parts and set the height and width*/
 header {
@@ -138,6 +144,7 @@ header .right nav > ul > li:hover a {
   line-height: 1.2;
   margin: 2rem 0rem;
 }
+
 /*styles the start here button*/
 #btn-starthere {
   margin: 2rem 0rem;
@@ -160,7 +167,6 @@ header .right nav > ul > li:hover a {
   display: flex;
   width: 52.875rem;
   height: 21rem;
-
 }
 
 .divider {
@@ -216,6 +222,10 @@ header .right nav > ul > li:hover a {
 /*this feels like a stupidly long chained rule to get down to that paragraph, but it seemed unnecessary to make a special id just for it*/
 #highlights .right-content .information .info p {
   margin: 1rem 0rem;
+}
+
+#highlights .right-content .information {
+  border-bottom: 1px solid #d8d8d8;
 }
 
 #learning {
@@ -305,6 +315,47 @@ footer .right nav >ul >li:hover >a {
 }
 
 
-@media only screen ("max-width:850px;") {
+@media screen and (max-width:750px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+/*I would probably make this into an accordian with bootstrap or something if I was making this a real website*/
+  .course-item img {
+    display: none;
+  }
+
+  .details p {
+    display: none;
+  }
+
+  .content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #banner .right-content {
+    width: 100%;
+  }
+
+  #banner .left-content {
+    height: 22.5rem;
+    background-color: darkgray;
+  }
+
+  .information {
+    flex-direction: column;
+  }
+
+  .left-content {
+    width: 100%;
+  }
+
+  header .right nav > ul > li > a {
+    padding: 2rem 3rem;
+  }
 
 }
